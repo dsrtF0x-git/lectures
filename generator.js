@@ -37,7 +37,7 @@
 
 // function* yieldStopTheFlow() {
 //   const PI = Math.PI;
-//   yield "This 'yield' stoped the flow";
+//   yield "This 'yield' stopped the flow";
 //   console.log(PI);
 // }
 
