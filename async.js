@@ -4,7 +4,7 @@ async function sum(a, b) {
   return a + b;
 }
 
-console.log(sum(10, 3));
+console.log("async sum >>>",sum(10, 3));
 
 function printSumAndOperands(a, b, cb) {
   let resultString = `${a} plus ${b} is equal: ${cb(a, b)}`;
@@ -24,7 +24,7 @@ class User {
     try {
       const headers = await axios.get("https://jsonplaceholder.typicode.com/users");
       const user = await headers.data[id];
-      console.log(user);
+      console.log("User from async method: ",user);
     } catch (error) {
       console.log(error.message);
     }
