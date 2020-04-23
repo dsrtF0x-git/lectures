@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <style>
+    .container {
+      width: 500px;
+      height: 500px;
+      background-color: #0fda3e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inner-container {
+      width: 300px;
+      height: 300px;
+      background-color: orangered;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .article {
+      background-color: white;
+    }
+
+    .delegation {
+      margin-top: 20px;
+      width: 300px;
+      background-color: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .events {
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+    }
+  </style>
+  <script>
+    // setInterval(() => console.log(document.readyState), 0)
+  </script>
+  <script defer  src="./events.js"></script>
+</head>
+
+<body>
+  <div class="events">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum magnam fuga cupiditate, quis
+    recusandae sunt.</div>
+  <div class="container">
+    <div class="inner-container">
+      <p class="article">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, mollitia.</p>
+    </div>
+  </div>
+  <div class="delegation">
+    <button>load</button>
+    <button>save</button>
+    <button>reset</button>
+  </div>
+  <form style="margin-top: 20px;">
+    <input type="text">
+    <input type="submit">
+  </form>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaRvP6Hrt8CqeldFdkRQJKXKWZFAn8Op1NsOMG3aN2QUBQXX-H&usqp=CAU" alt="">
+</body>
+
+</html>
