@@ -36,7 +36,7 @@ innerContainer.addEventListener("click", () => {
 
 article.addEventListener("click", () => {
   console.log("You clicked on article, bubbling");
-  // event.stopPropagation();
+  event.stopPropagation();
 });
 
 delegation.addEventListener("click", event => {
@@ -49,7 +49,7 @@ delegation.addEventListener("click", event => {
 });
 
 document.querySelectorAll("input")[1].addEventListener("click", event => {
-  // event.preventDefault();
+  event.preventDefault();
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -60,6 +60,22 @@ window.addEventListener("load", () => {
   console.log("Load");
 });
 
-window.onbeforeunload = function() {
-  return false;
-};
+window.addEventListener("contextmenu", () => {
+  event.preventDefault();
+});
+
+
+const button = document.getElementById("artificial");
+
+const artificialEvent = new Event("click");
+
+button.addEventListener("click", () => {
+  console.log("You clicked me");
+  document.body.innerHTML = ``;
+})
+
+setTimeout(() => button.dispatchEvent(artificialEvent), 2000);
+
+// window.onbeforeunload = function() {
+//   return false;
+// };
