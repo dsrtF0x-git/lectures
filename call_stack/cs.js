@@ -1,4 +1,5 @@
 // const axios = require("axios");
+// const chalk = require("chalk");
 
 
 // const obj = {
@@ -11,6 +12,7 @@
 
 // obj.sayHi();
 
+
 // function countSmth() {
 //   let counter = 0;
 //   function incCounter() {
@@ -22,34 +24,34 @@
 
 // countSmth()();
 
-// function add5(n) {
-//   for (let i = 0; i < 10; i++) {
-//     if (i === 7) {
-//       n = add10(n);
-//     }
-//   }
-//   return n + 5;
-// }
+function add5(n) {
+  for (let i = 0; i < 10; i++) {
+    if (i === 7) {
+      n = add10(n);
+    }
+  }
+  return n + 5;
+}
 
-// function add10(n) {
-//   debugger;
-//   return n + 10;
-// }
+function add10(n) {
+  debugger;
+  return n + 10;
+}
 
-// add5(10);
+add5(10);
 
 
 
 // function getFactorial(n) {
-  // if (n === 1) {
-  //   debugger; 
-  // }
+//   if (n === 1) {
+//     debugger; 
+//   }
 //   return n <= 1 ? 1 : n * getFactorial(n - 1);
 // }
 
 // console.log(getFactorial(5));
 // console.log(getFactorial(25));
-// console.log(getFactorial(11440));
+// console.log(getFactorial(11300));
 
 
 // function isObject(obj) {
@@ -63,7 +65,7 @@
 //     } else if (Array.isArray(reportObj[key])) {
 //       reportObj[key].forEach(item => getDetailWeatherReport(item));
 //     } else {
-//       console.log(`Key: ${key} --- Value: ${reportObj[key]}`);
+//       console.log(`Key: ${chalk.green(key)} --- Value: ${chalk.magenta(reportObj[key])}`);
 //     }
 //   }
 // }
