@@ -22,9 +22,12 @@
 // };
 
 // const bus = Object.create(vehicle);
-// // console.log(bus)
 
 // Object.setPrototypeOf(boat, vehicle);
+
+// console.log(`Bus >>>`, bus);
+// console.log(`Boat >>>`, boat);
+// console.log(`Train >>>`, train);
 
 // console.log(
 //   Object.getPrototypeOf(bus) === Object.getPrototypeOf(train)
@@ -37,7 +40,7 @@
 //   console.log(`Property >>> ${property}`)
 // };
 
-// console.log("Object entries >>>", Object.entries(train))
+// console.log("Object entries >>>", Object.entries(train));
 
 // const error1 = {
 //   name: "Error1",
